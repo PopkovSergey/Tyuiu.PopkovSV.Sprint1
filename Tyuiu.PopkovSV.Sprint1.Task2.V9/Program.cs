@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.PopkovSV.Sprint1.Task1.V20.Lib;
+using Tyuiu.PopkovSV.Sprint1.Task2.V9.Lib;
 
-namespace Tyuiu.PopkovSV.Sprint1.Task1.V20
+namespace Tyuiu.PopkovSV.Sprint1.Task2.V9
 {
     class Program
     {
@@ -18,32 +18,29 @@ namespace Tyuiu.PopkovSV.Sprint1.Task1.V20
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт#1                                                                *");
             Console.WriteLine("* Тема: Организация ввода/вывода в консольных приложениях                 *");
-            Console.WriteLine("* Задание #1                                                              *");
-            Console.WriteLine("* Вариант #20                                                             *");
+            Console.WriteLine("* Задание #2                                                              *");
+            Console.WriteLine("* Вариант #9                                                              *");
             Console.WriteLine("* Выполнил: Попков Сергей Вадимович | ИСТНб-23-1                          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные, *");
-            Console.WriteLine("* вычисляет результат по формуле (x * y / 2) + 10                         *");
+            Console.WriteLine("* вычисляет результат по формуле 4 / 3.0 * 3.141 * x * x * x              *");
             Console.WriteLine("* и печатает его на экране.                                               *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            double x, y;
+            int x;
 
             Console.WriteLine("Введите значение X:");
-            x = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("Введите значение Y:");
-            y = Convert.ToDouble(Console.ReadLine());
+            x = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(ds.Calculate(x, y));
+            Console.WriteLine("Объём шара = " + ds.CalculateVolumeCircle(x));
 
             Console.ReadLine();
 
